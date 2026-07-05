@@ -1,0 +1,27 @@
+{
+  "brand": "Pawan",
+  "isNavBarNotchEnabled": true,
+  "isNavBarTopButton": true,
+  "navLinks": [
+    {
+      "id": "nav-link-about",
+      "label": "About",
+      "href": "#about"
+    },
+    {
+      "id": "nav-link-experience",
+      "label": "Experience",
+      "href": "#experience-section"
+    },
+    {
+      "id": "nav-link-projects",
+      "label": "Projects",
+      "href": "#projects"
+    },
+    {
+      "id": "nav-link-contact",
+      "label": "Contact",
+      "href": "#contact"
+    }
+  ]
+}

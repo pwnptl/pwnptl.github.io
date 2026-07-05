@@ -1,0 +1,11 @@
+{
+  "hero": {
+    "title": "Hi, I'm Pawan",
+    "subtitle": "Full Stack Developer",
+    "description": "I build beautiful and functional web applications with modern technologies. Let's create something amazing together.",
+    "cta": {
+      "label": "Get In Touch",
+      "url": "#contact"
+    }
+  }
+}

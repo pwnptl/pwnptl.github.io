@@ -1,0 +1,65 @@
+{
+  "title": "Photo Gallery",
+  "photos": [
+    {
+      "id": 1,
+      "url": "/assets/img/gallery-01.png",
+      "alt": "Gallery photo 1",
+      "caption": "Landscape"
+    },
+    {
+      "id": 2,
+      "url": "/assets/img/gallery-02.png",
+      "alt": "Gallery photo 2",
+      "caption": "Portrait"
+    },
+    {
+      "id": 3,
+      "url": "/assets/img/gallery-03.jpg",
+      "alt": "Gallery photo 3",
+      "caption": "Landscape"
+    },
+    {
+      "id": 4,
+      "url": "/assets/img/gallery-04.png",
+      "alt": "Gallery photo 4",
+      "caption": "Square"
+    },
+    {
+      "id": 5,
+      "url": "/assets/img/gallery-05.jpg",
+      "alt": "Gallery photo 5",
+      "caption": "Landscape"
+    },
+    {
+      "id": 6,
+      "url": "/assets/img/gallery-06.jpg",
+      "alt": "Gallery photo 6",
+      "caption": "Ultra-Wide"
+    },
+    {
+      "id": 7,
+      "url": "/assets/img/gallery-07.jpg",
+      "alt": "Gallery photo 7",
+      "caption": "Portrait"
+    },
+    {
+      "id": 8,
+      "url": "/assets/img/gallery-08.png",
+      "alt": "Gallery photo 8",
+      "caption": "Square"
+    },
+    {
+      "id": 9,
+      "url": "/assets/img/gallery-09.png",
+      "alt": "Gallery photo 9",
+      "caption": "Landscape"
+    },
+    {
+      "id": 10,
+      "url": "/assets/img/gallery-10.png",
+      "alt": "Gallery photo 10",
+      "caption": "Portrait"
+    }
+  ]
+}

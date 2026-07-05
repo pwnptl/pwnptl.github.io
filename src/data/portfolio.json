@@ -1,0 +1,79 @@
+{
+  "profile": {
+    "name": "Your Name",
+    "title": "Full Stack Developer",
+    "bio": "Building elegant solutions with React and Node.js",
+    "image": "/assets/profile.jpg",
+    "email": "your.email@example.com",
+    "resume": "/assets/resume.pdf",
+    "social": {
+      "github": "https://github.com/yourusername",
+      "linkedin": "https://linkedin.com/in/yourusername",
+      "twitter": "https://twitter.com/yourusername"
+    }
+  },
+  "skills": [
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "items": ["React", "TypeScript", "Tailwind CSS", "Vite"]
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "items": ["Node.js", "Express", "PostgreSQL", "MongoDB"]
+    },
+    {
+      "id": "tools",
+      "name": "Tools & Other",
+      "items": ["Git", "Docker", "AWS", "Figma"]
+    }
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "company": "Tech Company",
+      "position": "Senior Developer",
+      "startDate": "2022-01-01",
+      "endDate": null,
+      "description": "Led development of key features"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project Name",
+      "description": "Project description",
+      "tags": ["React", "Tailwind"],
+      "image": "/assets/project-1.jpg",
+      "link": "https://project-url.com",
+      "github": "https://github.com/user/project"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "author": "Client Name",
+      "role": "CEO at Company",
+      "text": "Great work on the project!",
+      "image": "/assets/testimonial-1.jpg"
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "Blog Post Title",
+      "excerpt": "Brief excerpt",
+      "date": "2024-01-15",
+      "tags": ["React", "Performance"]
+    }
+  ],
+  "recognition": [
+    {
+      "id": 1,
+      "title": "Award Name",
+      "issuer": "Organization",
+      "date": "2023-06-01"
+    }
+  ]
+}

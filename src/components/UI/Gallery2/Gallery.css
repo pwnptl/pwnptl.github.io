@@ -1,0 +1,224 @@
+.gallery2-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem;
+}
+
+.gallery2-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  user-select: none;
+  width: 100%;
+}
+
+.gallery2-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.gallery2-nav-btn:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.gallery2-nav-btn:active {
+  transform: scale(0.95);
+}
+
+.gallery2-items-wrapper {
+  flex: 1;
+  overflow: hidden;
+}
+
+.gallery2-items {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+}
+
+.gallery2-items::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery2-items {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.gallery2-item {
+  position: relative;
+  border: 2px solid;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 300px;
+  min-width: auto;
+  width: auto;
+  cursor: grab;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.gallery2-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery2-item:active {
+  cursor: grabbing;
+}
+
+.gallery2-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery2-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery2-item:hover .gallery2-caption {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.gallery2-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+.gallery2-indicator {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.gallery2-indicator:hover {
+  transform: scale(1.2);
+}
+
+.gallery2-indicator.active {
+  transform: scale(1.3);
+}
+
+.gallery2-zoom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.gallery2-zoom-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.gallery2-zoom-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery2-zoom-close:hover {
+  transform: scale(1.1);
+}
+
+.gallery2-zoom-close:active {
+  transform: scale(0.95);
+}
+
+.gallery2-zoom-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.gallery2-zoom-caption {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 90vw;
+}
+
+@media (max-width: 768px) {
+  .gallery2-container { padding: 1.5rem; }
+  .gallery2-nav-btn { width: 36px; height: 36px; }
+  .gallery2-item { height: 250px; }
+  .gallery2-zoom-close { top: -40px; width: 36px; height: 36px; }
+  .gallery2-zoom-image { max-height: 70vh; }
+}
+
+@media (max-width: 480px) {
+  .gallery2-container { padding: 1rem; }
+  .gallery2-nav-btn { width: 32px; height: 32px; }
+  .gallery2-item { height: 200px; }
+  .gallery2-zoom-close { top: -35px; width: 32px; height: 32px; }
+  .gallery2-zoom-image { max-height: 60vh; }
+}

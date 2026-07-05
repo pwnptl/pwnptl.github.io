@@ -1,0 +1,128 @@
+.toast {
+  position: fixed;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-transform: capitalize;
+  animation: toastSlideIn 0.3s ease, toastSlideOut 0.3s ease;
+  animation-delay: 0s, calc(var(--duration, 1000ms) - 300ms);
+}
+
+@keyframes toastSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes toastSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
+/* Position Variants */
+.toast-bottom-right {
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.toast-bottom-left {
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.toast-bottom-center {
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.toast-top-right {
+  top: 2rem;
+  right: 2rem;
+}
+
+.toast-top-left {
+  top: 2rem;
+  left: 2rem;
+}
+
+.toast-top-center {
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Type Variants */
+.toast-info {
+  background-color: var(--accent-primary);
+  color: #ffffff;
+}
+
+.toast-success {
+  background-color: #10b981;
+  color: #ffffff;
+}
+
+.toast-warning {
+  background-color: #f59e0b;
+  color: #ffffff;
+}
+
+.toast-error {
+  background-color: #ef4444;
+  color: #ffffff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .toast {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+  }
+
+  .toast-bottom-right {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .toast-bottom-left {
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .toast-bottom-center {
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .toast-top-right {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .toast-top-left {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .toast-top-center {
+    top: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

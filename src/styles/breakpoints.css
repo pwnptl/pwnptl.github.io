@@ -1,0 +1,36 @@
+:root {
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+}
+
+/* Desktop styles (default) */
+.main-content {
+  margin-left: 250px;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+/* Shared mobile-first media query - applies to all components */
+@media (max-width: 767px) {
+  /* Main content responsive margin */
+  .main-content {
+    margin-left: 0;
+  }
+
+  /* Mobile nav toggle */
+  .mobile-nav-toggle {
+    display: block !important;
+  }
+
+  /* Navbar sidebar */
+  .navbar-sidebar {
+    width: 100%;
+    max-width: 250px;
+  }
+}
