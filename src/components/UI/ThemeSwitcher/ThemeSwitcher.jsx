@@ -62,8 +62,6 @@ export function ThemeSwitcher({ isToastEnabled = true }) {
       {/* Toast Notification using reusable Toast component */}
       <Toast
         message={toastThemeName}
-        duration={1000}
-        position="bottom-right"
         type="info"
         isVisible={showToast}
         onClose={() => setShowToast(false)}

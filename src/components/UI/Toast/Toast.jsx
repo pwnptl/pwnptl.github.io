@@ -3,8 +3,8 @@ import './Toast.css';
 
 export function Toast({
   message = '',
-  duration = 1000,
-  position = 'bottom-right',
+  duration = 5000,
+  position = 'bottom-center',
   type = 'info',
   isVisible = false,
   onClose = () => {},

@@ -33,10 +33,10 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: var(--contact-icon-bg);
+  /*background-color: var(--contact-icon-bg);*/
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  border: 2px solid var(--contact-icon-bg);
+  /*border: 2px solid var(--contact-icon-bg);*/
 }
 
 .contact-link:hover {
