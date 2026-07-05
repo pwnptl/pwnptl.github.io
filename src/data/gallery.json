@@ -3,9 +3,9 @@
   "photos": [
     {
       "id": 1,
-      "url": "/assets/img/gallery-01.png",
-      "alt": "Gallery photo 1",
-      "caption": "Landscape"
+      "url": "/assets/img/pawan_birbs.jpg",
+      "alt": "Pawan with Birds",
+      "caption": "Wilderness"
     },
     {
       "id": 2,
