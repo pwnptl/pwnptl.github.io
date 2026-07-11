@@ -1,0 +1,47 @@
+<!-- Gallery3 Component - Drop this div where you want the gallery -->
+<div id="gallery3-root"></div>
+
+<script type="module">
+  import Gallery3 from './gallery3.js';
+
+  // Initialize when DOM is ready
+  document.addEventListener('DOMContentLoaded', () => {
+    const galleryData = [
+      {
+        id: 1,
+        url: 'https://via.placeholder.com/400x300?text=Photo+1',
+        alt: 'Photo 1',
+        caption: 'Sample Photo 1',
+      },
+      {
+        id: 2,
+        url: 'https://via.placeholder.com/400x300?text=Photo+2',
+        alt: 'Photo 2',
+        caption: 'Sample Photo 2',
+      },
+      {
+        id: 3,
+        url: 'https://via.placeholder.com/400x300?text=Photo+3',
+        alt: 'Photo 3',
+        caption: 'Sample Photo 3',
+      },
+      {
+        id: 4,
+        url: 'https://via.placeholder.com/400x300?text=Photo+4',
+        alt: 'Photo 4',
+        caption: 'Sample Photo 4',
+      },
+      {
+        id: 5,
+        url: 'https://via.placeholder.com/400x300?text=Photo+5',
+        alt: 'Photo 5',
+        caption: 'Sample Photo 5',
+      },
+    ];
+
+    new Gallery3({
+      rootSelector: '#gallery3-root',
+      items: galleryData,
+    });
+  });
+</script>

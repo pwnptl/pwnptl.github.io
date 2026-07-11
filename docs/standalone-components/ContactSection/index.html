@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ContactSection - Standalone</title>
+</head>
+<body>
+  <div id="contact-root"></div>
+
+  <script type="module">
+    import ContactSection from './ContactSection.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const contactData = [
+        {
+          id: 'contact-email',
+          icon: 'email',
+          label: 'Email',
+          url: 'mailto:your-email@example.com',
+        },
+        {
+          id: 'contact-phone',
+          icon: 'phone',
+          label: 'Phone',
+          url: 'tel:+1234567890',
+        },
+        {
+          id: 'contact-whatsapp',
+          icon: 'whatsapp',
+          label: 'WhatsApp',
+          url: 'https://wa.me/1234567890',
+        },
+        {
+          id: 'contact-github',
+          icon: 'github',
+          label: 'GitHub',
+          url: 'https://github.com/yourusername',
+        },
+        {
+          id: 'contact-linkedin',
+          icon: 'linkedin',
+          label: 'LinkedIn',
+          url: 'https://linkedin.com/in/yourusername',
+        },
+      ];
+
+      new ContactSection({
+        rootSelector: '#contact-root',
+        items: contactData,
+      });
+    });
+  </script>
+</body>
+</html>

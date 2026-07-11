@@ -4,9 +4,9 @@
   "isNavBarTopButton": true,
   "navLinks": [
     {
-      "id": "nav-link-about",
-      "label": "About",
-      "href": "#about"
+      "id": "nav-link-hero",
+      "label": "Home",
+      "href": "#hero-section"
     },
     {
       "id": "nav-link-experience",
@@ -16,12 +16,27 @@
     {
       "id": "nav-link-projects",
       "label": "Projects",
-      "href": "#projects"
+      "href": "#projects-section"
+    },
+    {
+      "id": "nav-link-gallery",
+      "label": "Gallery",
+      "href": "#gallery3-section"
+    },
+    {
+      "id": "nav-link-skills",
+      "label": "Skills",
+      "href": "#skills-section"
+    },
+    {
+      "id": "nav-link-education",
+      "label": "Education",
+      "href": "#education-section"
     },
     {
       "id": "nav-link-contact",
       "label": "Contact",
-      "href": "#contact"
+      "href": "#contact-section"
     }
   ]
 }

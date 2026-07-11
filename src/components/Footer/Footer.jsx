@@ -9,7 +9,6 @@ import './Footer.css';
 export default function Footer() {
   const { theme } = useTheme();
   const colors = getColors();
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer id="footer" className="footer" style={{ backgroundColor: colors.background.secondary }}>
@@ -17,16 +16,6 @@ export default function Footer() {
         <Row>
           <Col xs={12}>
             <Contact />
-          </Col>
-        </Row>
-        <Row className="footer-bottom">
-          <Col xs={12} className="text-center">
-            <p
-              className="footer-copyright"
-              style={{ color: colors.font.tertiary }}
-            >
-              &copy; {currentYear} All rights reserved.
-            </p>
           </Col>
         </Row>
       </Container>

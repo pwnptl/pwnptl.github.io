@@ -1,65 +1,15 @@
 {
   "title": "Photo Gallery",
-  "photos": [
-    {
-      "id": 1,
-      "url": "/assets/img/pawan_birbs.jpg",
-      "alt": "Pawan with Birds",
-      "caption": "Wilderness"
-    },
-    {
-      "id": 2,
-      "url": "/assets/img/gallery-02.png",
-      "alt": "Gallery photo 2",
-      "caption": "Portrait"
-    },
-    {
-      "id": 3,
-      "url": "/assets/img/gallery-03.jpg",
-      "alt": "Gallery photo 3",
-      "caption": "Landscape"
-    },
-    {
-      "id": 4,
-      "url": "/assets/img/gallery-04.png",
-      "alt": "Gallery photo 4",
-      "caption": "Square"
-    },
-    {
-      "id": 5,
-      "url": "/assets/img/gallery-05.jpg",
-      "alt": "Gallery photo 5",
-      "caption": "Landscape"
-    },
-    {
-      "id": 6,
-      "url": "/assets/img/gallery-06.jpg",
-      "alt": "Gallery photo 6",
-      "caption": "Ultra-Wide"
-    },
-    {
-      "id": 7,
-      "url": "/assets/img/gallery-07.jpg",
-      "alt": "Gallery photo 7",
-      "caption": "Portrait"
-    },
-    {
-      "id": 8,
-      "url": "/assets/img/gallery-08.png",
-      "alt": "Gallery photo 8",
-      "caption": "Square"
-    },
-    {
-      "id": 9,
-      "url": "/assets/img/gallery-09.png",
-      "alt": "Gallery photo 9",
-      "caption": "Landscape"
-    },
-    {
-      "id": 10,
-      "url": "/assets/img/gallery-10.png",
-      "alt": "Gallery photo 10",
-      "caption": "Portrait"
-    }
-  ]
+  "photos": {
+    "gallery-01.png": { "caption": "Landscape", "alt": "Mountain landscape", "order": 1 },
+    "gallery-02.png": { "caption": "Portrait", "alt": "Portrait shot", "order": 2 },
+    "gallery-03.png": { "caption": "Landscape", "alt": "Wide landscape", "order": 3 },
+    "gallery-04.png": { "caption": "Square", "alt": "Square composition", "order": 4 },
+    "gallery-05.jpg": { "caption": "Landscape", "alt": "Scenic landscape", "order": 5 },
+    "gallery-06.jpg": { "caption": "Ultra-Wide", "alt": "Ultra-wide panorama", "order": 6 },
+    "gallery-07.png": { "caption": "Portrait", "alt": "Portrait photo", "order": 7 },
+    "gallery-08.png": { "caption": "Square", "alt": "Square photo", "order": 8 },
+    "gallery-09.png": { "caption": "Landscape", "alt": "Landscape view", "order": 9 },
+    "gallery-10.png": { "caption": "Portrait", "alt": "Portrait view", "order": 10 }
+  }
 }

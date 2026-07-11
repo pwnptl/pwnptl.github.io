@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExperienceSection - Standalone</title>
+</head>
+<body>
+  <div id="experience-root"></div>
+
+  <script type="module">
+    import ExperienceSection from './ExperienceSection.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const experienceData = [
+        {
+          id: 1,
+          date: 'Jan 2023 - Present',
+          title: 'Senior Developer',
+          company: 'Tech Company Inc',
+          description: 'Led development of core features and mentored junior developers.',
+        },
+        {
+          id: 2,
+          date: 'Jun 2021 - Dec 2022',
+          title: 'Full Stack Developer',
+          company: 'Startup XYZ',
+          description: 'Built scalable web applications using React and Node.js.',
+        },
+        {
+          id: 3,
+          date: 'Jan 2020 - May 2021',
+          title: 'Junior Developer',
+          company: 'Web Agency',
+          description: 'Developed responsive websites and fixed bugs in legacy systems.',
+        },
+      ];
+
+      new ExperienceSection({
+        rootSelector: '#experience-root',
+        items: experienceData,
+      });
+    });
+  </script>
+</body>
+</html>

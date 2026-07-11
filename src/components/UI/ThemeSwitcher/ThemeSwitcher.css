@@ -1,7 +1,4 @@
 .theme-switcher {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -12,7 +9,6 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 999;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
@@ -29,8 +25,6 @@
 
 @media (max-width: 767px) {
   .theme-switcher {
-    bottom: 1.5rem;
-    right: 1.5rem;
     width: 48px;
     height: 48px;
   }
@@ -39,3 +33,4 @@
     transform: scale(1.05);
   }
 }
+

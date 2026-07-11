@@ -1,0 +1,26 @@
+[
+  {
+    "id": "edu-1",
+    "date": "Feb 2025 - Oct 2025",
+    "title": "Master's Degree",
+    "company": "Caltech",
+    "description": "Advanced studies in Artificial Intelligence and Generative AI. Specialized in AI and ML.",
+    "logo": "https://via.placeholder.com/80?text=Caltech"
+  },
+  {
+    "id": "edu-2",
+    "date": "2013 - 2017",
+    "title": "Bachelor's Degree",
+    "company": "SGSITS Indore",
+    "description": "Computer Science. Core fundamentals and software development. Member of Code-Fosters and Robotic Club.",
+    "logo": "https://via.placeholder.com/80?text=SGSITS"
+  },
+  {
+    "id": "edu-3",
+    "date": "2001 - 2013",
+    "title": "Secondary & Senior Secondary",
+    "company": "Kendriya Vidyalaya",
+    "description": "General education covering science, mathematics, and humanities.",
+    "logo": "https://via.placeholder.com/80?text=KV"
+  }
+]

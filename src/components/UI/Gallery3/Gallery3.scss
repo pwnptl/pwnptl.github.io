@@ -1,0 +1,369 @@
+// Gallery3 Component Styles
+
+.gallery3-container {
+  width: 100%;
+  position: relative;
+}
+
+.gallery3-nav-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  user-select: none;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+}
+
+// Navigation buttons
+.gallery3-nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  width: 44px;
+  height: 44px;
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  svg {
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+
+    svg {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+
+  // Faded but still visible when no scroll is possible in that direction.
+  &--faded {
+    opacity: 0.35;
+    cursor: default;
+
+    &:hover {
+      transform: none;
+      opacity: 0.35;
+
+      svg {
+        transform: none;
+      }
+    }
+
+    &:active {
+      transform: none;
+    }
+  }
+
+  // Per-device visibility. Breakpoints:
+  //   mobile  <= 480px
+  //   tablet  481px - 768px
+  //   desktop > 768px
+  &--hide-mobile {
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+
+  &--hide-tablet {
+    @media (min-width: 481px) and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &--hide-desktop {
+    @media (min-width: 769px) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+  }
+
+  @media (max-width: 480px) {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+}
+
+// Wrapper and scroller
+.gallery3-wrapper {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery3-scroller {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    gap: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    gap: 0.5rem;
+  }
+
+  &.show-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-track);
+
+    &::-webkit-scrollbar {
+      height: 6px;
+      display: block;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--scrollbar-track);
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-color);
+      border-radius: 3px;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: var(--scrollbar-color);
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+// Gallery cards
+.gallery3-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: auto;
+  height: 300px;
+  border: 2px solid;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: grab;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  scroll-snap-align: start;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+    .gallery3-card-caption {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    cursor: grabbing;
+  }
+
+  @media (max-width: 768px) {
+    height: 250px;
+  }
+
+  @media (max-width: 480px) {
+    height: 200px;
+  }
+}
+
+.gallery3-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery3-card-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+// Modal
+.gallery3-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.gallery3-modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: slideUp 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.gallery3-modal-close {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  border: 2px solid;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 768px) {
+    top: -40px;
+    width: 36px;
+    height: 36px;
+  }
+
+  @media (max-width: 480px) {
+    top: -35px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+// Zoomable wrapper around the modal image. Sized to the fitted image; when
+// zoomed the image scales past this box and expands toward the viewport
+// (no inner clipping). Panning moves across the enlarged image.
+.gallery3-zoomable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+.gallery3-modal-img {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 8px;
+  -webkit-user-drag: none;
+
+  @media (max-width: 768px) {
+    max-height: 70vh;
+  }
+
+  @media (max-width: 480px) {
+    max-height: 60vh;
+  }
+}
+
+.gallery3-modal-caption {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0 1rem;
+  text-align: center;
+  max-width: 90vw;
+  line-height: 1.5;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.9rem;
+  }
+}

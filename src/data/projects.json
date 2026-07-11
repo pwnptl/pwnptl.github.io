@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Portfolio Website",
+      "image": "/assets/img/projects/project-1.jpg",
+      "description": "A modern, responsive portfolio website built with React and Tailwind CSS",
+      "url": "https://example.com/project1"
+    },
+    {
+      "id": "project-2",
+      "title": "E-Commerce Platform",
+      "image": "/assets/img/projects/project-2.jpg",
+      "description": "Full-stack e-commerce solution with payment integration and user authentication",
+      "url": "https://example.com/project2"
+    },
+    {
+      "id": "project-3",
+      "title": "Task Management App",
+      "image": "/assets/img/projects/project-3.jpg",
+      "description": "Collaborative task management application with real-time updates",
+      "url": "https://example.com/project3"
+    },
+    {
+      "id": "project-4",
+      "title": "Data Visualization Dashboard",
+      "image": "/assets/img/projects/project-4.jpg",
+      "description": "Interactive dashboard for data analytics and visualization",
+      "url": "https://example.com/project4"
+    }
+  ]
+}

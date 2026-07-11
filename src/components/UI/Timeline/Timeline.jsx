@@ -28,12 +28,19 @@ export function Timeline({ items = [] }) {
                   borderColor: colors.navbar.primary,
                 }}
               >
-                {iconMap[item.icon] &&
+                {item.logo ? (
+                  <img
+                    src={item.logo}
+                    alt={item.company}
+                    className="timeline-logo"
+                    title={item.company}
+                  />
+                ) : iconMap[item.icon] ? (
                   (() => {
                     const IconComponent = iconMap[item.icon];
                     return <IconComponent size={iconSize} style={{ color: '#ffffff' }} />;
                   })()
-                }
+                ) : null}
               </div>
 
               <div className="timeline-content">

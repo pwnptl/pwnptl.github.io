@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProjectsSection - Standalone</title>
+</head>
+<body>
+  <div id="projects-root"></div>
+
+  <script type="module">
+    import ProjectsSection from './ProjectsSection.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const projectsData = [
+        {
+          id: 'project-1',
+          title: 'Portfolio Website',
+          image: 'https://via.placeholder.com/400x200?text=Project+1',
+          description: 'A modern, responsive portfolio website built with React and Tailwind CSS',
+          url: 'https://example.com/project1',
+        },
+        {
+          id: 'project-2',
+          title: 'E-Commerce Platform',
+          image: 'https://via.placeholder.com/400x200?text=Project+2',
+          description: 'Full-stack e-commerce solution with payment integration and user authentication',
+          url: 'https://example.com/project2',
+        },
+        {
+          id: 'project-3',
+          title: 'Task Management App',
+          image: 'https://via.placeholder.com/400x200?text=Project+3',
+          description: 'Collaborative task management application with real-time updates',
+          url: 'https://example.com/project3',
+        },
+        {
+          id: 'project-4',
+          title: 'Data Visualization Dashboard',
+          image: 'https://via.placeholder.com/400x200?text=Project+4',
+          description: 'Interactive dashboard for data analytics and visualization',
+          url: 'https://example.com/project4',
+        },
+      ];
+
+      new ProjectsSection({
+        rootSelector: '#projects-root',
+        items: projectsData,
+      });
+    });
+  </script>
+</body>
+</html>

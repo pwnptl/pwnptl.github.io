@@ -1,34 +1,106 @@
 [
   {
     "id": "exp-1",
-    "date": "2023 - Present",
-    "title": "Senior Frontend Developer",
-    "company": "Tech Company A",
-    "description": "Leading frontend development, architecting scalable UI components and mentoring junior developers.",
+    "logo": "/assets/img/logos/kotak-mahindra-bank.jpg",
+    "date": "Aug 2023 - Present",
+    "title": "Software Development Engineer 2",
+    "company": "Kotak Mahindra Bank",
+    "location": "Hyderabad, Telangana, India · Hybrid",
+    "duration": "3 yrs",
+    "description": "Leading the in-housing Loan Management System project and spearheading the Login & Registration domain for the upcoming Kotak Mobile App.",
+    "highlights": [
+      "Leading the in-housing Loan Management System project for the past year",
+      "Spearheading the Login & Registration domain for the upcoming Kotak Mobile App",
+      "Managing teams of 3-5 engineers, driving HLD & LLD designs",
+      "Overseeing sprint planning & execution",
+      "Technical leadership, architectural decisions, and project execution"
+    ],
+    "skills": ["Java", "Spring Boot", "Figma", "InVision"],
     "icon": "FaBriefcase"
   },
   {
     "id": "exp-2",
-    "date": "2021 - 2023",
-    "title": "Full Stack Developer",
-    "company": "Tech Company B",
-    "description": "Developed full-stack features using React and Node.js, improved performance by 40%.",
+    "logo": "/assets/img/logos/amazon.jpg",
+    "date": "Jul 2021 - Mar 2023",
+    "title": "Software Development Engineer 2",
+    "company": "Amazon",
+    "location": "Bengaluru, Karnataka, India · Hybrid",
+    "duration": "1 yr 9 mos",
+    "description": "Re-architected Amazon Pay Accounting Systems and led development of Bill Payments and new payment methods.",
+    "highlights": [
+      "Re-architected Amazon Pay Accounting Systems reducing timeline from 18+ weeks to 4 weeks",
+      "Led the design and implementation of systems for Bill Payments on Amazon Pay",
+      "Spearheaded the onboarding of new installment-based payment method",
+      "Overhauled the Amazon Pay Post-Order user interface and experience",
+      "Improved Core Merchant Onboarding experience"
+    ],
+    "skills": ["Python", "AWS", "System Design", "Payment Systems"],
     "icon": "FaBriefcase"
   },
   {
     "id": "exp-3",
-    "date": "2019 - 2021",
-    "title": "Junior Developer",
-    "company": "Tech Company C",
-    "description": "Started career building web applications, learned best practices and development standards.",
+    "logo": "/assets/img/logos/amazon.jpg",
+    "date": "Jan 2020 - Jul 2021",
+    "title": "Software Development Engineer",
+    "company": "Amazon",
+    "location": "Greater Hyderabad Area",
+    "duration": "1 yr 7 mos",
+    "description": "Software Development Engineer contributing to various projects and product improvements.",
+    "skills": ["Software Development"],
     "icon": "FaBriefcase"
   },
   {
     "id": "exp-4",
-    "date": "2021 - 2025",
-    "title": "Haaha Developer",
-    "company": "Tech Company D",
-    "description": "details of some details",
+    "logo": "/assets/img/logos/samsung.jpg",
+    "date": "Nov 2018 - Feb 2019",
+    "title": "Software Engineer",
+    "company": "SAMSUNG R&D INSTITUTE INDIA - BANGALORE",
+    "location": "Bangalore · On-site",
+    "duration": "4 mos",
+    "description": "Developed the Core Simulator for network modules with hardware dependencies for 5G networks.",
+    "highlights": [
+      "Developed the Core Simulator for network modules with hardware dependencies",
+      "Enabled use in building the 5G network for faster and more robust mobility",
+      "Collaborated with 4G-LTE Team for seamless access between generations"
+    ],
+    "skills": ["Shell Scripting", "Bash", "5G", "Network Programming"],
+    "icon": "FaBriefcase"
+  },
+  {
+    "id": "exp-5",
+    "logo": "/assets/img/logos/aristocrat.jpg",
+    "date": "Dec 2017 - Oct 2018",
+    "title": "Associate Engineer",
+    "company": "Aristocrat",
+    "location": "Gurgaon, Haryana, India · On-site",
+    "duration": "11 mos",
+    "description": "Developed high-performance slot games and streamlined development processes.",
+    "highlights": [
+      "Successfully developed six high-performance slot games within one year",
+      "Delivered 4K resolution games tailored to different market specifications",
+      "Simplified various development processes reducing project costs",
+      "Conducted peer code reviews and implemented code enhancements",
+      "Submitted two impactful ideas for future development"
+    ],
+    "skills": ["Jira", "Git", "Game Development", "4K Graphics"],
+    "icon": "FaBriefcase"
+  },
+  {
+    "id": "exp-6",
+    "logo": "/assets/img/logos/funnode.jpg",
+    "date": "Sep 2017 - Jan 2018",
+    "title": "Game Developer",
+    "company": "FunNode",
+    "location": "Remote",
+    "duration": "5 mos",
+    "description": "Worked in a small team on mobile game porting using open-source game engine.",
+    "highlights": [
+      "Worked in a small team of five",
+      "Took responsibility for entire Mobile Ports of Games from scratch",
+      "Executed Porting of Two Games to Mobile Platform",
+      "Used OpenSource Game Engine with good GUI and seamless backend synchronization"
+    ],
+    "skills": ["Gameplay Programming", "GDScript", "Mobile Development"],
     "icon": "FaBriefcase"
   }
 ]

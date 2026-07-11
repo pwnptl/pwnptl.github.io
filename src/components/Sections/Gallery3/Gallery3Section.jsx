@@ -1,13 +1,12 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import { Heading, Section, Gallery3 } from '@ui';
 import { getColors } from '@theme/colors';
-import { useTheme } from '@theme/ThemeContext';
-import galleryData from '@data/gallery.json';
+import { loadGalleryItems, galleryTitle } from '@ui/Gallery3/loadGalleryItems';
 import './Gallery3Section.css';
 
 export default function Gallery3Section() {
-  const { theme } = useTheme();
   const colors = getColors();
+  const items = loadGalleryItems();
 
   return (
     <Section id="gallery3-section" className="gallery3-section">
@@ -20,13 +19,19 @@ export default function Gallery3Section() {
               className="gallery3-heading"
               style={{ color: colors.font.primary }}
             >
-              {galleryData.title}
+              {galleryTitle}
             </Heading>
           </Col>
         </Row>
         <Row>
           <Col lg={12}>
-            <Gallery3 items={galleryData.photos} />
+            <Gallery3
+              items={items}
+              showScrollbar={true}
+              autoScrollSec={3}
+              isRandomArrangement={false}
+              showChevrons={{ mobile: false, tablet: true, desktop: true }}
+            />
           </Col>
         </Row>
       </Container>

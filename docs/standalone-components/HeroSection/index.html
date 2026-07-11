@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HeroSection - Standalone</title>
+</head>
+<body>
+  <div id="hero-root"></div>
+
+  <script type="module">
+    import HeroSection from './HeroSection.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const heroData = {
+        title: 'Hi, I\'m Pawan',
+        subtitle: 'Full Stack Developer',
+        description: 'I build beautiful and functional web applications with modern technologies. Let\'s create something amazing together.',
+        cta: {
+          label: 'Get In Touch',
+          url: '#contact',
+        },
+      };
+
+      new HeroSection({
+        rootSelector: '#hero-root',
+        data: heroData,
+      });
+    });
+  </script>
+</body>
+</html>

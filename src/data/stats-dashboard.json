@@ -1,0 +1,70 @@
+{
+  "stats": [
+    {
+      "id": "leetcode",
+      "platform": "LeetCode",
+      "icon": "🟦",
+      "stats": [
+        { "label": "Problems Solved", "value": "245", "color": "#FFA500" },
+        { "label": "Acceptance Rate", "value": "87%", "color": "#4CAF50" },
+        { "label": "Ranking", "value": "Top 15%", "color": "#2196F3" }
+      ],
+      "link": "https://leetcode.com"
+    },
+    {
+      "id": "hackerrank",
+      "platform": "HackerRank",
+      "icon": "🟩",
+      "stats": [
+        { "label": "Badges", "value": "18", "color": "#00D084" },
+        { "label": "Stars", "value": "5 ⭐", "color": "#FFD700" },
+        { "label": "Languages", "value": "8", "color": "#9C27B0" }
+      ],
+      "link": "https://hackerrank.com"
+    },
+    {
+      "id": "hackerearth",
+      "platform": "HackerEarth",
+      "icon": "🟪",
+      "stats": [
+        { "label": "Contests", "value": "32", "color": "#7B2CBF" },
+        { "label": "Rank", "value": "250", "color": "#FF006E" },
+        { "label": "Points", "value": "3,450", "color": "#FB5607" }
+      ],
+      "link": "https://hackerearth.com"
+    },
+    {
+      "id": "geeksforgeeks",
+      "platform": "GeeksforGeeks",
+      "icon": "🟨",
+      "stats": [
+        { "label": "Problems Solved", "value": "189", "color": "#FFB703" },
+        { "label": "Streaks", "value": "45 days", "color": "#8ECAE6" },
+        { "label": "Score", "value": "8,900", "color": "#219EBC" }
+      ],
+      "link": "https://geeksforgeeks.org"
+    },
+    {
+      "id": "github",
+      "platform": "GitHub",
+      "icon": "🐙",
+      "stats": [
+        { "label": "Repositories", "value": "42", "color": "#333" },
+        { "label": "Contributions", "value": "1,245", "color": "#28A745" },
+        { "label": "Followers", "value": "342", "color": "#6F42C1" }
+      ],
+      "link": "https://github.com"
+    },
+    {
+      "id": "code-metrics",
+      "platform": "Code Metrics",
+      "icon": "📊",
+      "stats": [
+        { "label": "Total LOC", "value": "50K+", "color": "#FF6B6B" },
+        { "label": "LLD Projects", "value": "12", "color": "#4ECDC4" },
+        { "label": "HLD Projects", "value": "5", "color": "#45B7D1" }
+      ],
+      "link": "#"
+    }
+  ]
+}

@@ -8,8 +8,7 @@
     "dev:no-open": "vite --host localhost --port 5173",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview --host localhost --port 4173",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview --host localhost --port 4173"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.10",
@@ -30,6 +29,8 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.6.0",
+    "sass": "^1.101.0",
+    "sass-embedded": "^1.100.0",
     "vite": "^8.1.0"
   }
 }

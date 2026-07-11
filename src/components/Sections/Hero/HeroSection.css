@@ -7,7 +7,7 @@
 }
 
 .hero-content {
-  text-align: left;
+  text-align: center;
 }
 
 .hero-title {
@@ -71,9 +71,5 @@
 
   .hero-description {
     font-size: 1rem;
-  }
-
-  .hero-content {
-    text-align: center;
   }
 }

@@ -1,0 +1,35 @@
+.go-to-section-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--accent-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.go-to-section-btn:hover {
+  background-color: var(--accent-secondary);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.go-to-section-btn:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 767px) {
+  .go-to-section-btn {
+    width: 48px;
+    height: 48px;
+  }
+
+  .go-to-section-btn:hover {
+    transform: scale(1.05);
+  }
+}

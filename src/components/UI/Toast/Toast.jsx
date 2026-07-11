@@ -3,25 +3,27 @@ import './Toast.css';
 
 export function Toast({
   message = '',
-  duration = 5000,
+  duration = 1000,
   position = 'bottom-center',
   type = 'info',
   isVisible = false,
   onClose = () => {},
 }) {
-  const [show, setShow] = useState(isVisible);
+  const [show, setShow] = useState(false);
 
   useEffect(() => {
-    setShow(isVisible);
-
-    if (isVisible) {
-      const timer = setTimeout(() => {
-        setShow(false);
-        onClose();
-      }, duration);
-
-      return () => clearTimeout(timer);
+    if (!isVisible) {
+      setShow(false);
+      return;
     }
+
+    setShow(true);
+    const timer = setTimeout(() => {
+      setShow(false);
+      onClose();
+    }, duration);
+
+    return () => clearTimeout(timer);
   }, [isVisible, duration, onClose]);
 
   if (!show) return null;

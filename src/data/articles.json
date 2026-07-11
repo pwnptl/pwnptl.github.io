@@ -1,0 +1,47 @@
+[
+  {
+    "id": "article-1",
+    "title": "Building Scalable React Applications with State Management",
+    "excerpt": "A comprehensive guide to implementing Redux and Context API in large-scale React applications...",
+    "date": "2024-06-15",
+    "readTime": "8 min read",
+    "category": "React",
+    "link": "https://medium.com"
+  },
+  {
+    "id": "article-2",
+    "title": "Mastering System Design: From LLD to HLD",
+    "excerpt": "Learn how to design scalable systems from low-level components to high-level architecture...",
+    "date": "2024-05-28",
+    "readTime": "12 min read",
+    "category": "System Design",
+    "link": "https://dev.to"
+  },
+  {
+    "id": "article-3",
+    "title": "Node.js Performance Optimization Techniques",
+    "excerpt": "Practical techniques to optimize your Node.js applications for better performance and reliability...",
+    "date": "2024-05-10",
+    "readTime": "10 min read",
+    "category": "Backend",
+    "link": "https://hashnode.com"
+  },
+  {
+    "id": "article-4",
+    "title": "Database Indexing Strategies for MySQL",
+    "excerpt": "Deep dive into database indexing, query optimization, and performance tuning for MySQL...",
+    "date": "2024-04-22",
+    "readTime": "9 min read",
+    "category": "Database",
+    "link": "https://medium.com"
+  },
+  {
+    "id": "article-5",
+    "title": "Docker for Developers: A Practical Guide",
+    "excerpt": "Everything you need to know about containerization and Docker for modern development workflows...",
+    "date": "2024-04-05",
+    "readTime": "11 min read",
+    "category": "DevOps",
+    "link": "https://dev.to"
+  }
+]

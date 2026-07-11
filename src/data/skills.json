@@ -1,0 +1,100 @@
+{
+  "skills": [
+    {
+      "id": "skill-1",
+      "category": "Programming Languages",
+      "items": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "C++",
+        "Bash",
+        "Shell Scripting",
+        "GDScript"
+      ]
+    },
+    {
+      "id": "skill-2",
+      "category": "Web Technologies",
+      "items": [
+        "React",
+        "Node.js",
+        "Spring Boot",
+        "Express.js",
+        "HTML/CSS",
+        "REST APIs",
+        "GraphQL"
+      ]
+    },
+    {
+      "id": "skill-3",
+      "category": "Cloud & DevOps",
+      "items": [
+        "AWS",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Git",
+        "GitHub",
+        "GitLab"
+      ]
+    },
+    {
+      "id": "skill-4",
+      "category": "Databases",
+      "items": [
+        "SQL",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Elasticsearch"
+      ]
+    },
+    {
+      "id": "skill-5",
+      "category": "AI & Machine Learning",
+      "items": [
+        "Machine Learning",
+        "Deep Learning",
+        "Generative AI",
+        "TensorFlow",
+        "PyTorch",
+        "NLP"
+      ]
+    },
+    {
+      "id": "skill-6",
+      "category": "Mobile Development",
+      "items": [
+        "Android App Development",
+        "Kotlin",
+        "React Native",
+        "Flutter"
+      ]
+    },
+    {
+      "id": "skill-7",
+      "category": "Design & Tools",
+      "items": [
+        "Figma",
+        "InVision",
+        "Jira",
+        "Agile/Scrum",
+        "System Design"
+      ]
+    },
+    {
+      "id": "skill-8",
+      "category": "Hardware & IoT",
+      "items": [
+        "Raspberry Pi",
+        "Arduino",
+        "IoT Development",
+        "5G Networks",
+        "Embedded Systems"
+      ]
+    }
+  ]
+}

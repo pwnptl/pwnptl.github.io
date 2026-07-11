@@ -52,7 +52,6 @@ export default function Contact() {
                     label={contact.label}
                     url={contact.url}
                     size={28}
-                    style={{ backgroundColor: colors.background.primary, borderColor: colors.background.border}}
                   />
                 );
               })}

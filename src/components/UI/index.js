@@ -12,3 +12,7 @@ export { Timeline } from './Timeline/Timeline';
 export { ThemeSwitcher } from './ThemeSwitcher/ThemeSwitcher';
 export { Gallery3 } from './Gallery3/Gallery3';
 export { Toast } from './Toast/Toast';
+export { GoToTopButton } from './GoToTopButton/GoToTopButton';
+export { ControlsContainer } from './ControlsContainer/ControlsContainer';
+export { CardContainer } from './CardContainer/CardContainer';
+export { CardItem } from './CardItem/CardItem';

@@ -1,0 +1,43 @@
+.education-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .education-section {
+    padding: 3rem 2rem;
+  }
+
+  .education-grid {
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .education-heading {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .education-grid {
+    gap: 1.5rem;
+  }
+}

@@ -40,7 +40,6 @@ export function ThemeSwitcher({ isToastEnabled = true }) {
     setTheme(nextThemeName);
     applyThemeToDOM(nextThemeName);
 
-    // Show toast if enabled
     if (isToastEnabled) {
       setToastThemeName(nextThemeName.replace(/_/g, ' '));
       setShowToast(true);
@@ -59,9 +58,9 @@ export function ThemeSwitcher({ isToastEnabled = true }) {
         <MdPalette size={24} />
       </button>
 
-      {/* Toast Notification using reusable Toast component */}
       <Toast
         message={toastThemeName}
+        duration={1000}
         type="info"
         isVisible={showToast}
         onClose={() => setShowToast(false)}
@@ -71,3 +70,4 @@ export function ThemeSwitcher({ isToastEnabled = true }) {
 }
 
 export default ThemeSwitcher;
+

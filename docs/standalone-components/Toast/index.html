@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toast - Standalone</title>
+</head>
+<body>
+  <div id="toast-root"></div>
+
+  <script type="module">
+    import Toast from './Toast.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const toast = new Toast({
+        rootSelector: '#toast-root',
+      });
+
+      // Demo buttons
+      const buttons = [
+        { label: 'Info', type: 'info', message: 'This is an info message' },
+        { label: 'Success', type: 'success', message: 'Operation successful!' },
+        { label: 'Warning', type: 'warning', message: 'Warning: Please be careful' },
+        { label: 'Error', type: 'error', message: 'An error occurred' },
+      ];
+
+      const container = document.createElement('div');
+      container.style.cssText = 'padding: 2rem; font-family: sans-serif;';
+
+      buttons.forEach((btn) => {
+        const button = document.createElement('button');
+        button.textContent = btn.label;
+        button.style.cssText = 'margin: 0.5rem; padding: 0.75rem 1.5rem; cursor: pointer;';
+        button.addEventListener('click', () => {
+          toast.show({
+            message: btn.message,
+            type: btn.type,
+            position: 'bottom-center',
+            duration: 2000,
+          });
+        });
+        container.appendChild(button);
+      });
+
+      document.body.appendChild(container);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducationSection - Standalone</title>
+</head>
+<body>
+  <div id="education-root"></div>
+
+  <script type="module">
+    import EducationSection from './EducationSection.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const educationData = [
+        {
+          id: 1,
+          date: '2015 - 2019',
+          title: 'Bachelor of Science',
+          company: 'State University',
+          description: 'Computer Science - Focused on web development and software engineering principles.',
+          logo: 'https://via.placeholder.com/60x60?text=University'
+        },
+        {
+          id: 2,
+          date: '2013 - 2015',
+          title: 'Full Stack Web Development',
+          company: 'Community College',
+          description: 'Intensive bootcamp training in full-stack web development with practical projects.',
+          logo: 'https://via.placeholder.com/60x60?text=College'
+        },
+      ];
+
+      new EducationSection({
+        rootSelector: '#education-root',
+        items: educationData,
+      });
+    });
+  </script>
+</body>
+</html>

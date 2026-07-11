@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ControlsContainer - Standalone</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: linear-gradient(to bottom, #f5f5f5, #e0e0e0);
+      min-height: 100vh;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-bottom: 1px solid #ddd;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    section:nth-child(even) {
+      background: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div id="app-main-content" style="height: 100vh; overflow-y: auto;">
+    <section id="section-1">Section 1</section>
+    <section id="section-2">Section 2</section>
+    <section id="section-3">Section 3</section>
+    <section id="section-4">Section 4</section>
+  </div>
+
+  <div id="controls-container-root"></div>
+
+  <script type="module">
+    import ControlsContainer from './ControlsContainer.js';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      new ControlsContainer({
+        rootSelector: '#controls-container-root',
+        isThemeSwitcherEnabled: true,
+        isGoToTopEnabled: true,
+        scrollContainerId: 'app-main-content',
+      });
+    });
+  </script>
+</body>
+</html>

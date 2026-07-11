@@ -3,11 +3,13 @@ import Container from 'react-bootstrap/Container';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
 import { MdChevronRight } from 'react-icons/md';
-import { Heading, Button } from '@ui';
+import { MdEmail, MdPhone } from 'react-icons/md';
+import { Heading, Button, ContactLink } from '@ui';
 import { getColors } from '@theme/colors';
 import { useTheme } from '@theme/ThemeContext';
 import { breakpoints } from '@theme/breakpoints';
 import navbarData from '@data/navbar.json';
+import contactData from '@data/contact.json';
 import './Navbar.css';
 
 function NavLink({ href, children, onClick, id, isMobile }) {
@@ -65,6 +67,14 @@ export default function NavbarComponent() {
   };
 
   const colors = getColors();
+
+  const emailContact = contactData.contactInfo.find(c => c.id === 'contact-email');
+  const phoneContact = contactData.contactInfo.find(c => c.id === 'contact-phone');
+
+  const iconMap = {
+    'MdEmail': MdEmail,
+    'MdPhone': MdPhone,
+  };
 
   return (
     <Container id="navbar-container" fluid ref={navbarRef}>
@@ -139,6 +149,27 @@ export default function NavbarComponent() {
             </NavLink>
           ))}
         </nav>
+
+        <div id="navbar-contact-links" className="navbar-contact-links">
+          {emailContact && (
+            <ContactLink
+              id={emailContact.id}
+              icon={iconMap[emailContact.icon]}
+              label={emailContact.label}
+              url={emailContact.url}
+              size={18}
+            />
+          )}
+          {phoneContact && (
+            <ContactLink
+              id={phoneContact.id}
+              icon={iconMap[phoneContact.icon]}
+              label={phoneContact.label}
+              url={phoneContact.url}
+              size={18}
+            />
+          )}
+        </div>
       </aside>
     </Container>
   );
